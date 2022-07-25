@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpCSFixer">
+    <phpcsfixer_settings>
+      <PhpCSFixerConfiguration tool_path="$PROJECT_DIR$/shop/vendor/bin/php-cs-fixer" />
+    </phpcsfixer_settings>
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/shop/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/shop/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/shop/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/shop/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/shop/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/shop/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/shop/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/shop/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/shop/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/shop/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/shop/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/shop/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/shop/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/shop/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/shop/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/shop/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/shop/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/shop/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/shop/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/shop/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/shop/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/shop/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/exception-handler" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/process" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/logger" />
+      <path value="$PROJECT_DIR$/shop/vendor/composer" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/macroable" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/pool" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/coordinator" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/di" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/server" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/event" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/context" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/http-server" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/contract" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/framework" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/db-connection" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/utils" />
+      <path value="$PROJECT_DIR$/shop/vendor/swoole/ide-helper" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/http-message" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/guzzle" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/dispatcher" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/model-listener" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/database" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/code-generator" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/memory" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/testing" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/config" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/cache" />
+      <path value="$PROJECT_DIR$/shop/vendor/php-di/phpdoc-reader" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/ide-helper" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/redis" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/devtool" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/engine" />
+      <path value="$PROJECT_DIR$/shop/vendor/hyperf/command" />
+      <path value="$PROJECT_DIR$/shop/vendor/laminas/laminas-mime" />
+      <path value="$PROJECT_DIR$/shop/vendor/laminas/laminas-stdlib" />
+      <path value="$PROJECT_DIR$/shop/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/shop/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/shop/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/shop/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/shop/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/shop/vendor/php-cs-fixer/diff" />
+      <path value="$PROJECT_DIR$/shop/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/shop/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/shop/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/shop/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/shop/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/shop/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/shop/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/shop/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/shop/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/shop/vendor/hamcrest/hamcrest-php" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
+  <component name="PhpStan">
+    <PhpStan_settings>
+      <PhpStanConfiguration tool_path="$PROJECT_DIR$/shop/vendor/bin/phpstan" />
+    </PhpStan_settings>
+  </component>
+</project>
