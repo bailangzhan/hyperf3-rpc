@@ -7,9 +7,9 @@ interface UserServiceInterface
     /**
      * @param string $name
      * @param int $gender
-     * @return string
+     * @return array
      */
-    public function createUser(string $name, int $gender): string;
+    public function createUser(string $name, int $gender): array;
 
     /**
      * @param int $id

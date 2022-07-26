@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Tools\Result;
+use App\Constants\ErrorCode;
 use App\JsonRpc\UserServiceInterface;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\AutoController;
@@ -23,9 +25,13 @@ class UserController extends AbstractController
 
     public function createUser()
     {
-        $name = (string)$this->request->input('name', '');
-        $gender = (int)$this->request->input('gender', 0);
-        return $this->userServiceClient->createUser($name, $gender);
+        $name = (string) $this->request->input('name', '');
+        $gender = (int) $this->request->input('gender', 0);
+        $result = $this->userServiceClient->createUser($name, $gender);
+        if ($result['code'] != ErrorCode::SUCCESS) {
+            throw new \RuntimeException($result['message']);
+        }
+        return Result::success($result['data']);
     }
 
     /**
@@ -33,7 +39,11 @@ class UserController extends AbstractController
      */
     public function getUserInfo()
     {
-        $id = (int)$this->request->input('id');
-        return $this->userServiceClient->getUserInfo($id);
+        $id = (int) $this->request->input('id');
+        $result = $this->userServiceClient->getUserInfo($id);
+        if ($result['code'] != \Bailangzhan\Result\ErrorCode::SUCCESS) {
+            throw new \RuntimeException($result['message']);
+        }
+        return \Bailangzhan\Result\Result::success($result['data']);
     }
 }

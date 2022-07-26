@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5dedaa7ed50129769b785f1567f37c8",
+    "content-hash": "5977e13e85af6cee128f109d33fed4e3",
     "packages": [
+        {
+            "name": "bailangzhan/hyperf-result",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bailangzhan/hyperf-result.git",
+                "reference": "1d4cab6a1ca8573d6a3554229febcc700fef6732"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bailangzhan/hyperf-result/zipball/1d4cab6a1ca8573d6a3554229febcc700fef6732",
+                "reference": "1d4cab6a1ca8573d6a3554229febcc700fef6732",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hyperf/constants": "*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "hyperf": {
+                    "config": "Bailangzhan\\Result\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bailangzhan\\Result\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "bailangzhan",
+                    "email": "bailangzhan@qq.com"
+                }
+            ],
+            "description": "hyperf rpc 或者api 响应结果统一数据格式",
+            "support": {
+                "issues": "https://github.com/bailangzhan/hyperf-result/issues",
+                "source": "https://github.com/bailangzhan/hyperf-result/tree/master"
+            },
+            "time": "2022-07-26T08:38:29+00:00"
+        },
         {
             "name": "doctrine/annotations",
             "version": "1.13.3",
@@ -1063,6 +1115,67 @@
                 "hyperf",
                 "php",
                 "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2022-05-30T02:16:40+00:00"
+        },
+        {
+            "name": "hyperf/constants",
+            "version": "v3.0.0-beta.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/constants.git",
+                "reference": "1468d2db912c20c89595d7ad072b419f3e939aa1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/constants/zipball/1468d2db912c20c89595d7ad072b419f3e939aa1",
+                "reference": "1468d2db912c20c89595d7ad072b419f3e939aa1",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hyperf/di": "~3.0.0",
+                "hyperf/utils": "~3.0.0",
+                "php": ">=8.0"
+            },
+            "suggest": {
+                "hyperf/translation": "Required to use translation."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\Constants\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\Constants\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A constants component for hyperf.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "constants",
+                "hyperf",
+                "php"
             ],
             "support": {
                 "docs": "https://hyperf.wiki",
