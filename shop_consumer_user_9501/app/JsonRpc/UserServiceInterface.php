@@ -14,4 +14,9 @@ interface UserServiceInterface
      * @param int $id
      */
     public function getUserInfo(int $id);
+
+    /**
+     * @return mixed
+     */
+    public function test();
 }

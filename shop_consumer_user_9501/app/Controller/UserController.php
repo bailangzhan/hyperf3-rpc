@@ -46,4 +46,12 @@ class UserController extends AbstractController
         }
         return \Bailangzhan\Result\Result::success($result['data']);
     }
+
+    /**
+     * @return array
+     */
+    public function test()
+    {
+        return \Bailangzhan\Result\Result::success($this->userServiceClient->test());
+    }
 }
