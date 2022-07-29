@@ -17,19 +17,19 @@ return [
     'consumers' => [],
     'providers' => [],
     'drivers' => [
-        'consul' => [
-            'uri' => 'http://192.168.72.60:8500',
-            'token' => '',
-            'check' => [
-                'deregister_critical_service_after' => '90m',
-                'interval' => '1s',
-            ],
-        ],
+//        'consul' => [
+//            'uri' => 'http://192.168.72.60:8500',
+//            'token' => '',
+//            'check' => [
+//                'deregister_critical_service_after' => '90m',
+//                'interval' => '1s',
+//            ],
+//        ],
         'nacos' => [
             // nacos server url like https://nacos.hyperf.io, Priority is higher than host:port
             // 'url' => '',
             // The nacos host info
-            'host' => '127.0.0.1',
+            'host' => '192.168.72.60',
             'port' => 8848,
             // The nacos account info
             'username' => 'nacos',
@@ -38,9 +38,9 @@ return [
                 'config' => null,
             ],
             'group_name' => 'api',
-            'namespace_id' => 'namespace_id',
+            'namespace_id' => 'hyperf',
             'heartbeat' => 5,
-            'ephemeral' => false,
+            'ephemeral' => true,
         ],
     ],
 ];
