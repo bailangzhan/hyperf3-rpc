@@ -28,4 +28,6 @@ interface UserServiceInterface
 
     public function getNacosConfig(): array;
 
+    public function getUserInfoFromCache(int $id): array;
+
 }

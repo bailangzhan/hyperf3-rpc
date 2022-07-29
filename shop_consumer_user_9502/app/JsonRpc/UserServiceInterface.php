@@ -24,4 +24,10 @@ interface UserServiceInterface
      * @return mixed
      */
     public function getServerInfo();
+
+    /**
+     * @param int $id
+     * @return mixed
+     */
+    public function getUserInfoFromCache(int $id);
 }

@@ -31,7 +31,8 @@
         "hyperf/redis": "~3.0",
         "hyperf/rpc-client": "*",
         "hyperf/service-governance-consul": "*",
-        "hyperf/service-governance-nacos": "*"
+        "hyperf/service-governance-nacos": "*",
+        "hyperf/tracer": "~3.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",

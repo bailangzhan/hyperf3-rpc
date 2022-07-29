@@ -4,6 +4,7 @@ namespace App\JsonRpc;
 
 use App\Model\User;
 use App\Tools\Result;
+use Hyperf\Cache\Annotation\Cacheable;
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\RpcServer\Annotation\RpcService;
 use Hyperf\ServiceGovernanceConsul\ConsulAgent;
@@ -146,6 +147,20 @@ class UserService implements UserServiceInterface
             'info' => $config->get('hyperf_config'),
             'dev_info' => $config->get('hyperf_env'),
         ]);
+    }
+
+    /**
+     * @param int $id
+     * @return array
+     */
+    #[Cacheable(prefix: "userInfo", ttl: "60")]
+    public function getUserInfoFromCache(int $id): array
+    {
+        $user = User::query()->find($id);
+        if (empty($user)) {
+            throw new \RuntimeException("user not found");
+        }
+        return Result::success($user->toArray());
     }
 
 }

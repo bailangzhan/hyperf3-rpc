@@ -62,4 +62,17 @@ class UserController extends AbstractController
     {
         return \Bailangzhan\Result\Result::success($this->userServiceClient->getServerInfo());
     }
+
+    /**
+     * @return array
+     */
+    public function getUserInfoFromCache()
+    {
+        $id = (int) $this->request->input('id');
+        $result = $this->userServiceClient->getUserInfoFromCache($id);
+        if ($result['code'] != ErrorCode::SUCCESS) {
+            throw new \RuntimeException($result['message']);
+        }
+        return \Bailangzhan\Result\Result::success($result['data']);
+    }
 }
