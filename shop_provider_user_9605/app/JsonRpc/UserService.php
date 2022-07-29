@@ -133,4 +133,19 @@ class UserService implements UserServiceInterface
         ]);
     }
 
+    /**
+     * @return array
+     * @throws \Psr\Container\ContainerExceptionInterface
+     * @throws \Psr\Container\NotFoundExceptionInterface
+     */
+    public function getNacosConfig(): array
+    {
+        $config = ApplicationContext::getContainer()->get(ConfigInterface::class);
+        return Result::success([
+            // hyperf_config 是我们在 listener_config 配置要监听的 key
+            'info' => $config->get('hyperf_config'),
+            'dev_info' => $config->get('hyperf_env'),
+        ]);
+    }
+
 }

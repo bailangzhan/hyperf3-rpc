@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbfb4b18b6fb6c400f1e906f96987353",
+    "content-hash": "6c26d75647a79cf27a29021648b27370",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1061,6 +1061,135 @@
                 "config",
                 "configuration",
                 "hyperf",
+                "php",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2022-05-30T02:16:40+00:00"
+        },
+        {
+            "name": "hyperf/config-center",
+            "version": "v3.0.0-beta.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/config-center.git",
+                "reference": "d0499ba902c39353e13b7a8773dc068f8ff712f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/config-center/zipball/d0499ba902c39353e13b7a8773dc068f8ff712f2",
+                "reference": "d0499ba902c39353e13b7a8773dc068f8ff712f2",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "suggest": {
+                "hyperf/process": "^2.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\ConfigCenter\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\ConfigCenter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The abstraction component of config center",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "config-center",
+                "hyperf",
+                "php"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2022-05-30T02:16:40+00:00"
+        },
+        {
+            "name": "hyperf/config-nacos",
+            "version": "v3.0.0-beta.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/config-nacos.git",
+                "reference": "f5a6faaa725ce440639d111f7b2b096842e374c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/config-nacos/zipball/f5a6faaa725ce440639d111f7b2b096842e374c0",
+                "reference": "f5a6faaa725ce440639d111f7b2b096842e374c0",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hyperf/config-center": "~3.0.0",
+                "hyperf/contract": "~3.0.0",
+                "hyperf/guzzle": "~3.0.0",
+                "hyperf/nacos": "~3.0.0",
+                "hyperf/utils": "~3.0.0",
+                "php": ">=8.0"
+            },
+            "suggest": {
+                "ext-json": "*",
+                "ext-simplexml": "*",
+                "ext-yaml": "*",
+                "hyperf/event": "Required to use listeners. (~2.2.0)",
+                "hyperf/framework": "Required to use listeners. (~2.2.0)",
+                "hyperf/process": "Required to use processes. (~2.2.0)"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\ConfigNacos\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\ConfigNacos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A nacos adapter for config center component.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "hyperf",
+                "nacos",
                 "php",
                 "swoole"
             ],

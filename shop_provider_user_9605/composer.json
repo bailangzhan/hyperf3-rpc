@@ -17,6 +17,7 @@
         "hyperf/code-generator": "^0.3.3",
         "hyperf/command": "~3.0",
         "hyperf/config": "~3.0",
+        "hyperf/config-nacos": "*",
         "hyperf/constants": "*",
         "hyperf/database": "~3.0",
         "hyperf/db-connection": "~3.0",

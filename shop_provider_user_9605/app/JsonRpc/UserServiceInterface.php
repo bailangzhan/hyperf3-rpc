@@ -26,4 +26,6 @@ interface UserServiceInterface
 
     public function getServerInfo(): array;
 
+    public function getNacosConfig(): array;
+
 }
